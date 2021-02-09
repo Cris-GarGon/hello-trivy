@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Security') {
             steps {
                 sh 'trivy image --format json --output trivy-results.json debian:10.8'
             }
